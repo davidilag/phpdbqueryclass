@@ -87,9 +87,7 @@ class Connection {
 				
 				$result = $this->connection->query($qry);
 				$rows = array();
-		    	while ($row = $result->fetch_assoc()) {
-		    		$rows[] = $row;
-				}
+		    	while ($row = $result->fetch_assoc()) { $rows[] = $row;}
 				$result->free();
 		    	return $rows;
 				
