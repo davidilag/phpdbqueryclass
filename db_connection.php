@@ -69,9 +69,9 @@ class Connection {
 		
 		$post_qry = '';
 		if ($where) { 	$post_qry .= ' WHERE ' . 	key($where) . 	'="' . 	$where[key($where)] . 	'"';}
-		if ($and) { 	$post_qry .= ' AND ' . 		key($and) . 	'="' . 	$and[key($and)] . 		'"';}
-		if ($or) { 		$post_qry .= ' OR ' . 		key($or) . 		'="' . 	$or[key($or)] . 		'"';}
-		if ($order_by) {$post_qry .= ' ORDER BY ' . key($order_by) . ' ' . 	$order_by[key($order_by)];	}
+		if ($and) { 	$post_qry .= ' AND ' . 		key($and) . 	'="' . 	$and[key($and)] . 	'"';}
+		if ($or) { 	$post_qry .= ' OR ' . 		key($or) . 	'="' . 	$or[key($or)] . 	'"';}
+		if ($order_by) {$post_qry .= ' ORDER BY ' . 	key($order_by) . ' ' . 	$order_by[key($order_by)];}
 
 		$qry = '';
 		$qry .= $query_type;
